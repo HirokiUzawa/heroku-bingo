@@ -2,7 +2,7 @@
     <div>
         <header>
             <img class="bingo-header" src="/img/bingo.jpg"/>
-            <p>{{username}}</p>
+            <p v-html="username"></p>
         </header>
         <table>
             <tr v-for="(columns, index) in bingoCard" :key="index">
